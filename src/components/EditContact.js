@@ -45,7 +45,7 @@ const EditContact = () => {
 
     dispatch({type: 'EDIT_CONTACT', payload: data});
     toast.success('New contact was updated successfully!');
-    history.push('/');
+    history.push('/contactBook');
 
   }
 
@@ -80,7 +80,7 @@ const EditContact = () => {
               </div>
               <div className="form-group d-flex justify-content-center">
                 <input type="submit" value="Update Contact" className="btn btn-block btn-dark m-1" />
-                <Link to="/" className="btn btn-danger m-1" >Cancel</Link>
+                <Link to="/contactBook" className="btn btn-danger m-1" >Cancel</Link>
               </div>
             </form>
           </div>

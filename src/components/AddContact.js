@@ -31,7 +31,7 @@ const AddContact = () => {
     }
 
     const data = {
-      id: contacts.length,
+      id: contacts.length ? contacts[contacts.length - 1].id + 1 : 0,
       name,
       lastname,
       age,
@@ -40,7 +40,7 @@ const AddContact = () => {
 
     dispatch({type: 'ADD_CONTACT', payload: data});
     toast.success('New contact was added successfully!');
-    history.push('/');
+    history.push('/contactBook');
 
   }
   
@@ -64,7 +64,7 @@ const AddContact = () => {
             </div>
             <div className="form-group d-flex justify-content-center">
               <input type="submit" value="Add Contact" className="btn btn-block btn-dark m-1" />
-              <Link to="/" className="btn btn-danger m-1" >Cancel</Link>
+              <Link to="/contactBook" className="btn btn-danger m-1" >Cancel</Link>
             </div>
           </form>
         </div>

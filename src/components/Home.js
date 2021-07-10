@@ -18,7 +18,7 @@ const Home = () => {
     <div className="container">
       <div className="row">
         <div className="col-md-12 my-5 text-right">
-          <Link to="/add" className="btn btn-outline-dark">
+          <Link to="/contactBook/add" className="btn btn-outline-dark">
             Add Contact
           </Link>
         </div>
@@ -43,7 +43,7 @@ const Home = () => {
                   <td>{contact.age}</td>
                   <td>{contact.pager}</td>
                   <td className="d-flex justify-content-center">
-                    <Link to={`/edit/${contact.id}`} className="btn btn-small btn-primary p-1">
+                    <Link to={`/contactBook/edit/${contact.id}`} className="btn btn-small btn-primary p-1">
                       Edit
                     </Link>
                     <button

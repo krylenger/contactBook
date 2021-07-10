@@ -11,11 +11,11 @@ const App = () =>  {
       <ToastContainer />
       <Navbar />
       <Switch>
-        <Route exact path="/" component={() => <Home/>}/>
-        <Route exact path="/add">
+        <Route exact path="/contactBook" component={() => <Home/>}/>
+        <Route exact path="/contactBook/add">
           <AddContact />
         </Route>
-        <Route exact path="/edit/:id">
+        <Route exact path="/contactBook/edit/:id">
           <EditContact />
         </Route>
       </Switch>
